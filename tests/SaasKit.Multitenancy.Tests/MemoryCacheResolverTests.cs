@@ -97,7 +97,7 @@ namespace SaasKit.Multitenancy.Tests
             var tenantContext = await harness.Resolver.ResolveAsync(CreateContext("/apple"));
 
             // cache should have all 3 entries
-            Assert.NotNull(harness.Cache.Get("/apple"));
+            Assert.NotNull(harness.Cache.Get("/pineapple"));
             Assert.NotNull(harness.Cache.Get("/pear"));
             Assert.NotNull(harness.Cache.Get("/grape"));
 
